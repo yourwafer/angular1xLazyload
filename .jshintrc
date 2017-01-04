@@ -1,0 +1,12 @@
+{
+  "asi": true,
+  "latedef": false,
+  "shadow": true,
+  "loopfunc": true,
+  // more options here if you want to override JSHint defaults
+  "globals": {
+    "jQuery": true,
+    "console": true,
+    "module": true
+  }
+}
