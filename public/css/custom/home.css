@@ -1,0 +1,10 @@
+.homeLoadding {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    margin-left: -150px;
+    background-color: #c9e2b3;
+}
+.homeLoadding *{
+    vertical-align: middle;
+}
