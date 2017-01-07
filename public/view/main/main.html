@@ -1,149 +1,40 @@
-<style>
-    .content-item-divider {
-        height: 1px;
-        margin: 0px 5px 0px 20px;
-        overflow: hidden;
-        background-color: #e5e5e5
-    }
-</style>
-
-<!-- Bootstrap Core CSS -->
-<link href="js/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- MetisMenu CSS -->
-<link href="js/lib/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link href="css/third-part/sb-admin-2.min.css" rel="stylesheet">
-
-<!-- Custom Fonts -->
-<link href="js/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-<!--build-css-start-->
-<!--build-css-end-->
-
-<div id="wrapper">
-
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0px;">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">展开</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html" style="padding:2px;">
-                <img alt="logo" style="margin-left: 3px;height: 47px;;" src="images/logo.png">
-            </a>
+<link href="css/custom/main.css" rel="stylesheet" type="text/css">
+<div>
+    <div class="head-pan">
+        <div class="icon">
         </div>
-
-        <ul class="nav navbar-top-links navbar-right">
-            <li>
-                <span class="label label-info">用户</span><span class="label label-success">{{username}}</span>
-
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#!/login"><i class="fa fa-user fa-fw"></i> 个人设置</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li><a href="#!/login"><i class="fa fa-sign-out fa-fw"></i> 退出登录</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
-                <ul class="nav" id="side-menu">
-
-                    <li ui-sref-active="active">
-                        <a href="#" ui-sref="biz"><span class="glyphicon glyphicon-education"
-                                                        style="margin-right: 2px"></span>商务</a>
-                        <ul class="nav nav-second-level">
-                            <li ui-sref-active="active"><a ui-sref="biz.email">发送个人邮件</a></li>
-                            <li ui-sref-active="active"><a ui-sref="biz.summary">数据概览</a></li>
-                            <li class="content-item-divider"></li>
-                            <li ui-sref-active="active"><a ui-sref="biz.active">用户数量与活跃</a></li>
-                            <li ui-sref-active="active"><a ui-sref="biz.online">每日玩家在线情况</a></li>
-                            <li ui-sref-active="active"><a ui-sref="biz.follow">注册玩家及上线情况</a></li>
-                            <li ui-sref-active="active"><a ui-sref="biz.global_gift">全局礼包列表</a></li>
-                            <li class="content-item-divider"></li>
-                            <li ui-sref-active="active"><a ui-sref="biz.global_gift_create">添加全局礼包</a></li>
-                            <li ui-sref-active="active"><a ui-sref="biz.charge">付费数据</a></li>
-                            <li ui-sref-active="active"><a ui-sref="biz.vip">充值额度与VIP分布</a></li>
-                        </ul>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a ui-sref="opera"><span class="glyphicon glyphicon-grain"
-                                                 style="margin-right: 2px"></span>运维</a>
-                        <ul class="nav nav-second-level">
-                            <li ui-sref-active="active"><a ui-sref="opera.operator">运营商管理</a></li>
-                            <li ui-sref-active="active"><a ui-sref="opera.server">游戏服管理</a></li>
-                            <li ui-sref-active="active"><a ui-sref="control">游戏控制</a></li>
-                        </ul>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a ui-sref="dev"><span class="glyphicon glyphicon-console"
-                                               style="margin-right: 2px"></span>开发</a>
-                        <ul class="nav nav-second-level">
-                            <li ui-sref-active="active"><a ui-sref="dev.reload">数值重载</a></li>
-                            <li ui-sref-active="active"><a ui-sref="dev.crud">游戏数据</a></li>
-                            <li class="content-item-divider"></li>
-                            <li ui-sref-active="active"><a ui-sref="dev.struct">效果结构</a></li>
-                            <li ui-sref-active="active"><a ui-sref="dev.struct_create">创建效果结构</a></li>
-                            <li ui-sref-active="active"><a ui-sref="dev.effect">技能效果</a></li>
-                            <li ui-sref-active="active"><a ui-sref="dev.effect_create">创建技能效果</a></li>
-                            <li ui-sref-active="active"><a ui-sref="dev.skill">技能</a></li>
-                            <li ui-sref-active="active"><a ui-sref="dev.skill_create">创建技能</a></li>
-                            <li ui-sref-active="active"><a ui-sref="dev.reward">奖励</a></li>
-                            <li ui-sref-active="active"><a ui-sref="dev.groupmission">多人副本监控</a></li>
-                        </ul>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a ui-sref="sys"><span class="glyphicon glyphicon-hdd" style="margin-right: 2px"></span>系统</a>
-                        <ul class="nav nav-second-level">
-                            <li ui-sref-active="active">
-                                <a ui-sref="sys.user">用户</a>
-                            </li>
-                            <li ui-sref-active="active">
-                                <a ui-sref="sys.role">角色</a>
-                            </li>
-                            <li ui-sref-active="active"><a ui-sref="sys.operation">操作日志</a></li>
-                            <li ui-sref-active="active"><a ui-sref="sys.reload">资源重载</a></li>
-                            <li ui-sref-active="active"><a ui-sref="sys.test">demo</a></li>
-                        </ul>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a ui-sref="conf"><span class="glyphicon glyphicon-pencil"
-                                                style="margin-right: 2px"></span>设置</a>
-                        <ul class="nav nav-second-level">
-                            <li ui-sref-active="active"><a ui-sref="conf.passwd">设置</a></li>
-                        </ul>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a ui-sref="serv"><span class="glyphicon glyphicon-phone-alt" style="margin-right: 2px"></span>客服</a>
-                        <ul class="nav nav-second-level">
-                            <li ui-sref-active="active"><a ui-sref="srev.log">日志查询</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </div>
+        <div class="head-message">
+            欢迎用户
         </div>
-    </nav>
-
-    <div id="page-wrapper" class="container-fluid" ui-view>
+    </div>
+    <div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <label for="techSystem">技术体系</label>
+                    <input type="checkbox" id="techSystem" class="hide"/>
+                    <div class="check-style"></div>
+                    <div class="collapse">
+                        <ul>
+                            <li>Java</li>
+                            <li>Sprint boot</li>
+                            <li>Angular</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <label for="spitSystem">吐槽专区</label>
+                    <input type="checkbox" id="spitSystem" class="hide"/>
+                    <div class="check-style"></div>
+                </li>
+                <li>
+                    <label for="abilitySystem">能力建设</label>
+                    <input type="checkbox" id="abilitySystem" class="hide"/>
+                    <div class="check-style"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="container"></div>
     </div>
 </div>
-
-<!-- Metis Menu Plugin JavaScript -->
-<script src="js/lib/metisMenu/dist/metisMenu.min.js"></script>
-
-<!-- Local JS -->
-
-<script src="js/third-part/sbadmin/sb-admin-2.min.js"></script>
-

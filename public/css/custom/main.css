@@ -1,0 +1,84 @@
+.icon {
+    background-image: url("../../images/logo.png");
+    background-repeat: no-repeat;
+    height: 58px;
+    width: 192px;
+    display: inline-block;
+}
+
+.head-pan {
+    height: 50px;
+}
+
+.head-message {
+    float: right;
+}
+
+.menu {
+    float: left;
+    width: 300px;
+    min-height: 700px;
+    border: solid 1px #c9e2b3;
+}
+
+.container {
+    margin-left: 305px;
+
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.collapse {
+    overflow: hidden;
+    max-height: 0px;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+    -o-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: max-height, visibility;
+    -o-transition-property: max-height, visibility;
+    transition-property: max-height, visibility;
+}
+
+input[type=checkbox]:checked + div {
+    border-top: 10px solid black;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+input[type=checkbox]:checked + div + div {
+    max-height: 100px;
+}
+
+.menu > ul > li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.menu > ul > li > label:first-child {
+    font-size: 14px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 5px;
+    padding: 5px;
+    border-color: #c9e2b3;
+    display: inline-block;
+    box-shadow:0px 15px 10px -15px #000;
+}
+
+.check-style {
+    float: left;
+    width: 0;
+    height: 0;
+    margin-top: 7px;
+    border-top: 5px solid transparent;
+    border-right: 10px solid black;
+    border-bottom: 5px solid transparent;
+}
+.collapse >ul li{
+    list-style: none;
+}
