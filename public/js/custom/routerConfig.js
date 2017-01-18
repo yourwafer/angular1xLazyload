@@ -50,5 +50,14 @@ define(["require",
                     $stateProvider.state(item);
                 }
             }]);
+        lazyloadModule.lazyDirective = lazyloadModule.directive;
+        lazyloadModule.lazyFilter = lazyloadModule.filter;
+        lazyloadModule.lazyController = lazyloadModule.controller;
+        lazyloadModule.lazyProvider = lazyloadModule.provider;
+        lazyloadModule.lazyService = lazyloadModule.service;
+        lazyloadModule.lazyFactory = lazyloadModule.factory;
+        lazyloadModule.lazyValue = lazyloadModule.value;
+        lazyloadModule.lazyConstant = lazyloadModule.constant;
         return lazyloadModule;
-    });
+    }
+);
