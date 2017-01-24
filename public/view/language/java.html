@@ -1,0 +1,21 @@
+<h4>java</h4>
+<p>
+    The uibDateParser is what the uib-datepicker uses internally to parse the dates. You can use it standalone by injecting the uibDateParser service where you need it.
+
+    The public API for the dateParser is a single method called parse.
+
+    Certain format codes support i18n. Check this guide for more information.
+
+    uibDateParser's parse function
+    parameters
+
+    input (Type: string, Example: 2004/Sep/4) - The input date to parse.
+
+    format (Type: string, Example: yyyy/MMM/d) - The format we want to use. Check all the supported formats below.
+
+    baseDate (Type: Date, Example: new Date()) - If you want to parse a date but maintain the timezone, you can pass an existing date here.
+
+    return
+
+    If the specified input matches the format, a new date with the input will be returned, otherwise, it will return undefined.
+</p>

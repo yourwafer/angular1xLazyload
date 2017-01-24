@@ -10,7 +10,7 @@ define(["require",
         function buildLoadDepend(depends) {
             return function ($q, $rootScope) {
                 var defer = $q.defer();
-                require(depends, function () {
+                require(depends, function (dep) {
                     $rootScope.$apply(function () {
                         defer.resolve();
                     });
@@ -44,6 +44,7 @@ define(["require",
                 lazyloadModule.lazyFactory = $provide.factory;
                 lazyloadModule.lazyValue = $provide.value;
                 lazyloadModule.lazyConstant = $provide.constant;
+                lazyloadModule.state = $stateProvider.state;
 
                 for (var i = 1; i < routerSize; ++i) {
                     var item = routers[i];

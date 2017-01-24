@@ -4,7 +4,7 @@
 define([], function(){
     var routerConfig = {
         name: "home",
-        url: "/",
+        url: "",
         templateUrl: "view/home/home.html",
         controller: "home.ctrl",
         lazyload: ["home/homeCtrl"]

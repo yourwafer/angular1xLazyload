@@ -7,7 +7,7 @@ define([], function(){
         url: "/main",
         templateUrl: "view/main/main.html",
         controller: "main.ctrl",
-        lazyload: ["main/mainCtrl"]
+        lazyload: ["main/mainCtrl", "language/languageRouter"]
     };
     return routerConfig;
 });

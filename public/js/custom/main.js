@@ -2,7 +2,7 @@
  * Created by hwwei on 2017/1/4.
  */
 requirejs.config({
-    baseUrl: 'base/js/custom'
+    baseUrl: 'js/custom'
 });
 requirejs(["routerConfig"], function (module) {
     module.controller("mainCtrl", ["$rootScope", "$scope", function($rootScope, $scope){

@@ -1,7 +1,7 @@
 /**
  * Created by hwwei on 2017/1/5.
  */
-define("homeCtrl", ["routerConfig"], function(config){
+define(["routerConfig"], function(config){
     var controller = ["$scope", "$state", "$rootScope", function($scope, $state, $rootScope){
         $rootScope.title = "点击跳转";
         $scope.go = function () {
