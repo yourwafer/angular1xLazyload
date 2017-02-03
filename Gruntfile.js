@@ -118,16 +118,12 @@ module.exports = function (grunt) {
             }
         },
         karma: {
-            options: {
-                files: ['public/js/**/*.js']
-            },
             unit: {
                 configFile: 'karma.conf.js',
                 port: 9999,
                 singleRun: true,
                 browsers: ['PhantomJS'],
-                logLevel: 'ERROR',
-                files: ["public/js/custom-test/**/*.js"]
+                logLevel: 'ERROR'
             }
         }
     });
