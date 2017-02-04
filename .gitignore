@@ -4,3 +4,4 @@ public/js/lib/
 *.iml
 build/
 .DS_Store
+*.log
