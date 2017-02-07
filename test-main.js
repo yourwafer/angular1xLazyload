@@ -1,6 +1,6 @@
 /**
  * Created by hwwei on 2017/1/11.
- */
+*/
 var TEST_REGEXP = /(spec|test)\.js$/i;
 var allTestFiles = [];
 
